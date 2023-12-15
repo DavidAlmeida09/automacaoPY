@@ -1,0 +1,9 @@
+Visando aprimorar nossos processos, decidi criar um script em Python que interage com esse Portal de Ofertas.
+
+O propósito desse script é automatizar a geração de ofertas utilizando um portal que disponibiliza relatórios contendo diversas informações, como imagens, valores e descrições de produtos.
+
+O script analisa duas planilhas geradas diariamente por um terceiro sistema. Ele avalia as colunas 'rentabilidade' e 'estoque' com base em uma condição específica: se a rentabilidade estiver dentro do ideal (conforme definido) e o estoque for superior a 30 unidades, o script cria uma segunda planilha contendo código, estoque e rentabilidade.
+
+Posteriormente, utilizando essa nova planilha, o script entra em um loop, percorrendo cada código e preenchendo os campos na página através do Selenium, em lotes de 4, conforme permitido pela interface web. Essa abordagem possibilita o download automático de todas as ofertas disponíveis.
+
+Ao concluir o processo, o script gera e salva uma planilha contendo as ofertas recém-criadas. Essa automatização tem contribuído significativamente para otimizar nossas operações e simplificar a geração de ofertas.
